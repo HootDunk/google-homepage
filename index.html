@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Dummy Document</title>
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <title>Google Homepage</title>
 
     </head>
     <body>
-        <header>
-            <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li><button type="button"><img id="apps-button" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png"></button></li>
-                <li><button type="button">Click Me!</button></li>
-            </ul>
-        </header>
-        <div class='google-logo'>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt='Google logo'>
+        <div id="page-container">
+            <header>
+                
+                <div id="header-elements">
+
+                        <div id="left-element">
+                            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="header-element">About</a>
+                            <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="header-element">Store</a>
+                        </div>
+
+
+                        <div id="right-element">
+                            <a href="https://mail.google.com" class="header-element">Gmail</a>
+                            <a href="https://images.google.com/" class="header-element">Images</a>
+                            <a href="" class="header-element"><img id="apps-button" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png"></a>
+                            <button type="button" class="header-element" id="sign-in-button">Sign in</button>
+
+                        </div>
+                </div>
+                        
+                    
+
+
+            </header>
+            <div class='google-logo'>
+                <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt='Google logo'>
+            </div>
+            <div id="search-form">
+                <input type="text" id="search-bar">
+            </div>
+            <div id="search-buttons">
+                <button type="submit" class="search-buttons" id="google-search-button">Google Search</button>
+                <button type="submit" class="search-buttons" id="lucky-button">I'm Feeling Lucky</button>
+            </div>
+            
+            <footer>
+                <div id="footer-elements">
+                    <div id="left-footer">
+                        <a href="" class="footer-element">Advertising</a>
+                        <a href="" class="footer-element">Business</a>
+                        <a href="" class="footer-element">How Search works</a>
+                    </div>
+                    <div id="right-footer">
+                        <a href="" class="footer-element">Privacy</a>
+                        <a href="" class="footer-element">Terms</a>
+                        <a href="" class="footer-element">Settings</a>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <div id="search-form">
-            <input type="text" id="search-bar">
-        </div>
-        <div id="search-buttons">
-            <button type="submit" id="search-button">Google Search</button>
-            <button type="submit" id="lucky-button">I'm Feeling Lucky</button>
-        </div>
-        
-        
     </body>
 </html>
